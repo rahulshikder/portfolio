@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* navbar style  */
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 34px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3 ease;
+}
+
+.navbar.sticky {
+    padding: 15px 0;
+    background: red;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logo a :hover {
+    color: rgb(72, 36, 201);
+}
+
+.navbar .logo a span {
+    color: rgb(233, 12, 56);
+    transition: all 0.3 ease;
+}
+
+.navbar .logo a span :hover {
+    color: rgb(10, 1, 1);
+}
+
+.navbar.sticky {
+    padding: 15px 0;
+    background: #7e040463;
+}
+
+.navbar.sticky .logo a span {
+    color: #fff;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+    color: crimson;
+}
+
+
+.navbar.sticky .menu li a:hover {
+    color: #fff;
+}
+
+/* menu btn styleing */
+
+.menu-btn {
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+/* home section styleing */
+
+.home {
+    display: flex;
+    background: url("banner.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.home .home-contant .text-1 {
+    font-size: 27px;
+}
+
+.home .home-contant .text-2 {
+    font-size: 70px;
+    font-weight: 500;
+    margin-left: -3px;
+}
+
+.home .home-contant .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-contant .text-3 span {
+    color: rgb(235, 14, 14);
+    font-weight: 500;
+}
+
+.home .home-contant a {
+    display: inline-block;
+    background-color: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.home .home-contant a:hover {
+    color: crimson;
+    background: none;
+
+}
+
+
+
+/* about section styling */
+
+section {
+    padding: 100px 0;
+}
+
+.about {
+    font-family: 'poppins', sans-serif;
+}
+
+.about .titel {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-size: 'Ubuntu', sans-serif;
+}
+
+.about .titel::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+.about .titel::after {
+    content: "who I am";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+.about .about-contant {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-contant .left {
+    width: 45%;
+}
+
+.about .about-contant .left img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.about .about-contant .right {
+    width: 55%;
+}
+
+
+.about .about-contant .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-contant .right .text span {
+    color: crimson;
+}
+
+.about .about-contant .right p {
+    text-align: justify;
+}
+
+.about .about-contant .right a {
+    display: inline-block;
+    background-color: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.about .about-contant .right a:hover {
+    color: crimson;
+    background: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive media query :start */
+
+@media (max-width:10oall00px) {
+    .home .max-width {   
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:1000px) {
+    .home .max-width {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:950px) {
+    .max-width {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width:900px) {
+
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0%;
+        background: black;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .menu-btn i.active::before {
+        content: "\f00d";
+    }
+
+    .navbar .menu.active {
+        left: 0;
+    }
+
+    .navbar .menu li {
+        display: block;
+    }
+
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .home .home-contant .text-2 {
+        font-size: 70px;
+
+    }
+
+    .home .home-contant .text-3 {
+        font-size: 35px;
+    }
+
+    .home .home-contant a {
+        font-size: 20px;
+        padding: 8px 20px;
+    }
+
+    .about .about-contant .column{
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+
+    .home .home-contant .text-2 {
+        font-size: 50px;
+
+    }
+
+    .home .home-contant .text-3 {
+        font-size: 27px;
+    }
+
+    .home .home-contant a {
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+}
